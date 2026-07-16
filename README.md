@@ -31,6 +31,13 @@ Smart Lender AI is a machine learning-based loan eligibility prediction system. 
 - 📁 SmartLender (Project Code)
 - 📄 Entity Relationship.pdf
 
+
+## 🎥 Project Demo Video
+
+Watch the demo video here:
+
+**🔗 Demo Video:**  
+https://drive.google.com/file/d/1PsImT-WSZ8RNJGEtiVXy6nMHAgD6iAYi/view?usp=drivesdk
 ## Team Members
 
 - Brundha Madiraju
