@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Lender — Loan Eligibility Prediction</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🏦 Smart Lender</h1>
+      <p>AI-powered loan eligibility prediction</p>
+    </header>
+
+    <form action="/predict" method="POST" class="form-card">
+      <h2>Applicant Details</h2>
+
+      <div class="form-grid">
+        <div class="form-group">
+          <label>Gender</label>
+          <select name="gender" required>
+            <option value="1">Male</option>
+            <option value="0">Female</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>Married</label>
+          <select name="married" required>
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>Dependents</label>
+          <select name="dependents" required>
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3+</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>Education</label>
+          <select name="education" required>
+            <option value="0">Graduate</option>
+            <option value="1">Not Graduate</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>Self Employed</label>
+          <select name="self_employed" required>
+            <option value="0">No</option>
+            <option value="1">Yes</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>Property Area</label>
+          <select name="property_area" required>
+            <option value="2">Urban</option>
+            <option value="1">Semiurban</option>
+            <option value="0">Rural</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>Applicant Income (₹/month)</label>
+          <input type="number" name="applicant_income" placeholder="e.g. 5000" required>
+        </div>
+
+        <div class="form-group">
+          <label>Co-applicant Income (₹/month)</label>
+          <input type="number" name="coapplicant_income" placeholder="e.g. 0" required>
+        </div>
+
+        <div class="form-group">
+          <label>Loan Amount (₹ thousands)</label>
+          <input type="number" name="loan_amount" placeholder="e.g. 150" required>
+        </div>
+
+        <div class="form-group">
+          <label>Loan Term (months)</label>
+          <input type="number" name="loan_term" placeholder="e.g. 360" required>
+        </div>
+
+        <div class="form-group">
+          <label>Credit History</label>
+          <select name="credit_history" required>
+            <option value="1">Good (1)</option>
+            <option value="0">No history (0)</option>
+          </select>
+        </div>
+      </div>
+
+      <button type="submit" class="btn-predict">Predict Eligibility</button>
+    </form>
+  </div>
+</body>
+</html>

@@ -1,1 +1,7 @@
+# Ignore Python cache
+__pycache__/
+*.py[cod]
+
+# Ignore demo videos
 10_Demo Video/
+*.mp4
